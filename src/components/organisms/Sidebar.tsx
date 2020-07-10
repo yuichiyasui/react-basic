@@ -18,7 +18,7 @@ const Sidebar = () => {
   return (
     <Section>
       <ExactLink to={"/"}>
-        <Heading color="white" title="React Basic" />
+        <StyledHeading color="white" title="React Basic" />
       </ExactLink>
       <SidebarItems items={items} />
     </Section>
@@ -29,7 +29,10 @@ const Section = styled.section`
   background-color: #001e43;
   height: 100vh;
   width: 20vw;
-  padding: auto 1.4rem;
+`;
+
+const StyledHeading = styled(Heading)`
+  margin: 2rem 1rem 1.5rem 1.5rem;
 `;
 
 export default Sidebar;
