@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import "assets/stylesheet/index.css";
-import App from "components/pages/App";
+
+import Home from "components/pages/Home";
 import About from "components/pages/About";
-import Sidebar from "components/organisms/Sidebar";
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Sidebar />
-      <Route exact path="/" component={App} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
     </Router>
   </React.StrictMode>,
