@@ -1,12 +1,12 @@
 import React from "react";
 import BaseTemplate from "components/templates/BaseTemplate";
 
-const Home = () => {
+const Contents = () => {
   return (
     <BaseTemplate>
-      <h1>Home</h1>
+      <h1>Contents</h1>
     </BaseTemplate>
   );
 };
 
-export default Home;
+export default Contents;

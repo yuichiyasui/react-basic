@@ -1,13 +1,20 @@
 import React from "react";
 import Sidebar from "components/organisms/Sidebar";
-// import styled from "styled-components";
+import Content from "components/organisms/Content";
+import styled from "styled-components";
 
 const BaseTemplate = (props: any) => {
   return (
-    <div>
+    <Flex>
       <Sidebar />
-      <div>{props.children}</div>
-    </div>
+      <Content>{props.children}</Content>
+    </Flex>
   );
 };
+
+const Flex = styled.div`
+  display: flex;
+  background-color: #efefef;
+`;
+
 export default BaseTemplate;

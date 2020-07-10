@@ -1,7 +1,12 @@
 import React from "react";
+import BaseTemplate from "components/templates/BaseTemplate";
 
 const About = () => {
-  return <h1>About</h1>;
+  return (
+    <BaseTemplate>
+      <h1>About</h1>
+    </BaseTemplate>
+  );
 };
 
 export default About;
